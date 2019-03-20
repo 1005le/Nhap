@@ -14,7 +14,7 @@ public class CategoryDAOImpl implements CategoryDAO {
 	@Override
 	public void addCategory(Category category) {
 		Connection con = DBConnect.getConnection();
-		String sql = "insert into category value(?,?,?)";
+		String sql = "insert into category values(?,?,?)";
 		PreparedStatement ps; 
 		try {
 			
